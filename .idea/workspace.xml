@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Dec 26th">
-      <change afterPath="$PROJECT_DIR$/SrilaPrabhupada/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/archana.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bhajana.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/biography.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/lectures.html" afterDir="false" />
+    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Dec 29th">
+      <change afterPath="$PROJECT_DIR$/templates/facilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guesthouse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/tempcategory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/templehistory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrilaPrabhupada/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SrilaPrabhupada/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temple/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Temple/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temple/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Temple/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,7 +86,7 @@
       <workItem from="1640166187611" duration="5815000" />
       <workItem from="1640175114622" duration="4336000" />
       <workItem from="1640411997539" duration="3492000" />
-      <workItem from="1640758258765" duration="1525000" />
+      <workItem from="1640758258765" duration="2532000" />
     </task>
     <task id="LOCAL-00001" summary="dec 26">
       <created>1640532144983</created>
@@ -102,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640759184895</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dec 29th">
+      <created>1640760180202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640760180202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dec 26" />
     <MESSAGE value="Dec 26th" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dec 26th" />
+    <MESSAGE value="Dec 29th" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dec 29th" />
   </component>
 </project>
