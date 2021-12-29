@@ -10,6 +10,8 @@ urlpatterns = [
     path('admin', admin.site.urls),
     path('', include('Home.urls')),
     path('', include('About.urls')),
+    path('', include('SrilaPrabhupada.urls')),
+    path('', include('Temple.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
