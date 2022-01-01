@@ -43,14 +43,14 @@
 
 
                                 <li><a href="{% url 'festival' %}">Festivals</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
                                 <li><a href="#">Seva's <i class="far fa-chevron-down"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="#"> Vastrabarana Seva</a></li>
-                                    <li><a href="#"> Pushpalankara Seva</a></li>
-                                    <li><a href="#"> Annadana Seva</a></li>
-                                    <li><a href="#"> bhisheka Seva</a></li>
-                                    <li><a href="#"> Naivedya Seva</a></li>
+                                    <li><a href="{% url 'vastrabarana' %}"> Vastrabarana Seva</a></li>
+                                    <li><a href="{% url 'pushpalankara' %}"> Pushpalankara Seva</a></li>
+                                    <li><a href="{% url 'annadana' %}"> Annadana Seva</a></li>
+                                    <li><a href="{% url 'bhisheka' %}"> Bhisheka Seva</a></li>
+                                    <li><a href="{% url 'naivedya' %}"> Naivedya Seva</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>

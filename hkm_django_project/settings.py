@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Home',
     'SrilaPrabhupada',
     'Temple',
+    'Gallery',
+    'festivals',
 ]
 
 MIDDLEWARE = [

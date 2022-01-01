@@ -12,6 +12,8 @@ urlpatterns = [
     path('', include('About.urls')),
     path('', include('SrilaPrabhupada.urls')),
     path('', include('Temple.urls')),
+    path('', include('Gallery.urls')),
+    path('', include('festivals.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
