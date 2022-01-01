@@ -2,16 +2,16 @@ from django.shortcuts import render
 
 # Create your views here.
 def vastrabarana(request):
-    pass
+    return render(request,'vastrabarana.html')
 
 def pushpalankara(request):
-    pass
+    return render(request,'pushpalankara.html')
 
 def annadana(request):
-    pass
+    return render(request,'annadana.html')
 
 def bhisheka(request):
-    pass
+    return render(request,'bhisheka.html')
 
 def naivedya(request):
-    pass
+    return render(request,'naivedya.html')

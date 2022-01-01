@@ -14,6 +14,7 @@ urlpatterns = [
     path('', include('Temple.urls')),
     path('', include('Gallery.urls')),
     path('', include('festivals.urls')),
+    path('', include('Seva.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
