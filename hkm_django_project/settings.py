@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'Gallery',
     'festivals',
     'Seva',
+    'contact',
+    'donate',
 ]
 
 MIDDLEWARE = [
