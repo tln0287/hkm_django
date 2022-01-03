@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Jan 2nd">
-      <change afterPath="$PROJECT_DIR$/About/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myenv.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_01_22__1_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_01_22__1_01_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2022_10_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2022_10_14__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-12-2021_09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-12-2021_09_09__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home/migrations/0003_slides_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/slides/hkm01_new.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-12-2021_09_09_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-12-2021_09_09__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/About/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/About/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hkm_django_project.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hkm_django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hkm_django_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hkm_django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hkm_django_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/logo/logo-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo/logo-light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/img/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/customize-django-admin-master" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -176,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641103543124</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Jan 2nd">
+      <created>1641176316226</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641176316226</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +201,7 @@
     <MESSAGE value="Dec 31st" />
     <MESSAGE value="Jan 1ST" />
     <MESSAGE value="nick jan 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="nick jan 2" />
+    <MESSAGE value="Jan 2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jan 2nd" />
   </component>
 </project>
