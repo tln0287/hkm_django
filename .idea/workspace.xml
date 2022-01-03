@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="nick jan 2">
-      <change afterPath="$PROJECT_DIR$/Gallery/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seva/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Temple/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/donate/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Jan 2nd">
+      <change afterPath="$PROJECT_DIR$/About/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myenv.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_01_22__1_01_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_01_22__1_01_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2022_10_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2022_10_14__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-12-2021_09_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-12-2021_09_09__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/About/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/About/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hkm_django_project.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hkm_django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hkm_django_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hkm_django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hkm_django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/logo/logo-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo/logo-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +192,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -192,16 +203,5 @@
     <MESSAGE value="Jan 1ST" />
     <MESSAGE value="nick jan 2" />
     <option name="LAST_COMMIT_MESSAGE" value="nick jan 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/templehistory.html</url>
-          <line>215</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

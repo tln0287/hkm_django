@@ -15,7 +15,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-xl-2 col-lg-2 col-md-6 col-6">
                     <div class="logo">
-                        <a class="logo-img" href="index.html"><img src="/static/assets/img/logo/logo.png" alt=""></a>
+                        <a class="logo-img" href="{% url 'index' %}"><img src="/static/assets/img/logo/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-xl-10 col-lg-10 d-none d-lg-block text-lg-center text-xl-right">
@@ -76,6 +76,7 @@
             </div>
         </div>
     </div>
+    </div>
 </header>
 <!-- header-area end -->
 
@@ -88,58 +89,37 @@
     <!-- side-mobile-menu start -->
     <nav class="side-mobile-menu">
         <ul id="mobile-menu-active">
-            <li class="has-dropdown">
-                <a href="index.html">Home</a>
-                <ul class="sub-menu">
-                    <li><a href="index.html">Home Style 1</a></li>
-                    <li><a href="index-2.html">Home Style 2</a></li>
-                    <li><a href="index-3.html">Home Style 3</a></li>
-                </ul>
+             <li><a class="active" href="{% url 'index' %}">Home </a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li class="has-dropdown"><a href="#">Srila Prabhupada </a>
+                                        <ul class="submenu">
+                                            <li><a href="{% url 'archana' %}">Our Archana</a></li>
+                                            <li><a href="{% url 'biography' %}">Biography</a></li>
+                                            <li><a href="{% url 'books' %}">Books</a></li>
+                                            <li><a href="{% url 'lectures' %}">Lectures</a></li>
+                                            <li><a href="{% url 'bhajana' %}">Bhajans and Kirtans</a></li>
+                                        </ul>
             </li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="has-dropdown">
-                <a href="#">Case</a>
-                <ul class="sub-menu">
-                    <li><a href="case.html">Case Study One</a></li>
-                    <li><a href="case-2.html">Case Study Two</a></li>
-                    <li><a href="case-3.html">Case Study Three</a></li>
-                    <li><a href="case-details.html">Case Study Details</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="#">Event</a>
-                <ul class="sub-menu">
-                    <li><a href="events-list.html">Events List</a></li>
-                    <li><a href="events-grid.html">Events Grid</a></li>
-                    <li><a href="events-details.html">Events Details</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="gallery-2.html">Gallery Two</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="team-details.html">Team Details</a></li>
-                    <li><a href="login.html">Sign In</a></li>
-                    <li><a href="register.html">Sign Up</a></li>
-                    <li><a href="forgot-password.html">Forgot Password</a></li>
-                    <li><a href="donation.html">Donation Form</a></li>
-                    <li><a href="volunteer.html">Volunteer</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="term-condition.html">Terms & Conditions</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="404.html">404 Error</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown"><a href="#">Blog</a>
-                <ul class="submenu">
-                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                    <li><a href="blog-standard.html">Blog Standard</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contacts Us</a></li>
+           <li class="has-dropdown"><a href="#">Temples </a>
+                                        <ul class="submenu">
+                                            <li><a href="{% url 'templehistory' %}">Hari Krishna Hills </a> </li>
+                                        </ul>
+                                    </li>
+
+
+                                <li><a href="{% url 'festival' %}">Festivals</a></li>
+                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                <li class="has-dropdown"><a href="#">Seva's </a>
+                                <ul class="submenu">
+                                    <li><a href="{% url 'vastrabarana' %}"> Vastrabarana Seva</a></li>
+                                    <li><a href="{% url 'pushpalankara' %}"> Pushpalankara Seva</a></li>
+                                    <li><a href="{% url 'annadana' %}"> Annadana Seva</a></li>
+                                    <li><a href="{% url 'bhisheka' %}"> Bhisheka Seva</a></li>
+                                    <li><a href="{% url 'naivedya' %}"> Naivedya Seva</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li><a href="{% url 'donate' %}">Donate </a></li>
         </ul>
     </nav>
     <!-- side-mobile-menu end -->

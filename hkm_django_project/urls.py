@@ -7,7 +7,7 @@ admin.site.site_header = "HKM"
 admin.site.site_title = "HKM"
 
 urlpatterns = [
-    path('admin', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('Home.urls')),
     path('', include('About.urls')),
     path('', include('SrilaPrabhupada.urls')),
