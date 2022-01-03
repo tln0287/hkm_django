@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'Seva',
     'contact',
     'donate',
+    'tinymce',
 ]
 
 MIDDLEWARE = [

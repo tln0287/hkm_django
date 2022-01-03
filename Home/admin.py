@@ -1,7 +1,15 @@
 from django.contrib import admin
 from .models import Slides,Clients_Feedback,Site_Stats
 # Register your models here.
-admin.site.register(Slides)
+
 
 admin.site.register(Clients_Feedback)
 admin.site.register(Site_Stats)
+
+
+class DemoProfileAdmin(admin.ModelAdmin):
+    fields = ('name', 'slide_image')
+    list_display = ['admin_photo']
+    list_filter = ['name',]
+    readonly_fields = ('admin_photo',)
+admin.site.register(Slides,DemoProfileAdmin)
