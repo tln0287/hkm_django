@@ -2513,7 +2513,7 @@ label {
 }
 .page-title-area::before {
   content: "";
-  background-color: #061738;
+
   opacity: 0.7;
   position: absolute;
   left: 0;
