@@ -9,6 +9,7 @@ class Festivals(models.Model):
     content = HTMLField(default="<p>Add content</p>")
     timestamp = models.DateTimeField(_("Timestamp"), auto_now=True)
     event_image = models.ImageField(upload_to='events/')
+    event_date = models.DateField(null=True,blank=True)
 
     class Meta:
         verbose_name_plural = "Festivals"
