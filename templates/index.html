@@ -527,70 +527,26 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6">
+                            {% for j in gallery %}
+                            <div class="col-xl-3 col-lg-3 col-md-3">
                                 <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
                                     <div class="gallery__thumb pos-rel mb-30">
-                                        <img src="/static/assets/img/gallery/1.jpg" alt="">
+                                        <img src="/media/{{j.gallery_image}}" alt="">
                                     </div>
                                     <div class="gallery__content">
-                                        <a class="popup-image" href="/static/assets/img/gallery/1.jpg"><i
+                                        <a class="popup-image" href="/media/{{j.gallery_image }}"><i
                                                 class="far fa-plus"></i></a>
-                                        <h3><a href="gallery-2.html">Help The Children</a></h3>
+                                        <h3><a href="/gallery"></a></h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                    <div class="gallery__thumb pos-rel mb-30">
-                                        <img src="/static/assets/img/gallery/2.jpg" alt="">
-                                    </div>
-                                    <div class="gallery__content">
-                                        <a class="popup-image" href="/static/assets/img/gallery/2.jpg"><i
-                                                class="far fa-plus"></i></a>
-                                        <h3><a href="gallery-2.html">Help The Children</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                    <div class="gallery__thumb pos-rel mb-30">
-                                        <img src="/static/assets/img/gallery/3.jpg" alt="">
-                                    </div>
-                                    <div class="gallery__content">
-                                        <a class="popup-image" href="/static/assets/img/gallery/3.jpg"><i
-                                                class="far fa-plus"></i></a>
-                                        <h3><a href="gallery-2.html">Help The Children</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                    <div class="gallery__thumb pos-rel mb-30">
-                                        <img src="/static/assets/img/gallery/4.jpg" alt="">
-                                    </div>
-                                    <div class="gallery__content">
-                                        <a class="popup-image" href="/static/assets/img/gallery/4.jpg"><i
-                                                class="far fa-plus"></i></a>
-                                        <h3><a href="gallery-2.html">Help The Children</a></h3>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
-                            <div class="gallery__thumb pos-rel mb-30">
-                                <img src="/static/assets/img/gallery/5.jpg" alt="">
-                            </div>
-                            <div class="gallery__content">
-                                <a class="popup-image" href="/static/assets/img/gallery/5.jpg"><i
-                                        class="far fa-plus"></i></a>
-                                <h3><a href="gallery-2.html">Help The Children</a></h3>
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </section>

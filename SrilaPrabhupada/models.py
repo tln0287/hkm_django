@@ -17,7 +17,7 @@ class Category(models.Model):
 
 class SrilaPrabhupada(models.Model):
     id = models.AutoField(primary_key=True, auto_created=True)
-    models.ManyToManyField(
+    title = models.ManyToManyField(
         Category, verbose_name=_("Category"), related_name="post"
     )
     content = HTMLField(default="<p>Add content</p>")

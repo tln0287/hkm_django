@@ -21,15 +21,6 @@ class Slides(models.Model):
 
 
 
-class Clients_Feedback(models.Model):
-    id = models.AutoField(primary_key=True, auto_created=True)
-    client_name = models.CharField(max_length=500, blank=True, null=True)
-    client_image = models.ImageField(upload_to='clients/')
-    client_rating = models.IntegerField(blank=True, null=True)
-    client_comments = models.TextField(blank=True, null=True)
-
-    class Meta:
-        verbose_name_plural = "Clients Feedback"
 
 class Site_Stats(models.Model):
     id = models.AutoField(primary_key=True, auto_created=True)
