@@ -425,7 +425,7 @@ label {
 }
 .section-title h2 {
   color: #001234;
-  font-size: 65px;
+  font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
   font-family: "Barlow Condensed", sans-serif;
@@ -437,12 +437,12 @@ label {
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .section-title h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 @media (max-width: 767px) {
