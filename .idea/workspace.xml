@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Jan 4th">
-      <change afterPath="$PROJECT_DIR$/festivals/migrations/0002_festivals_event_date.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festivals/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/festivals/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festivals/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/festivals/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrilaPrabhupada/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SrilaPrabhupada/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../raghu" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -100,7 +92,7 @@
       <workItem from="1640932204540" duration="3293000" />
       <workItem from="1641055072265" duration="1429000" />
       <workItem from="1641276360337" duration="4227000" />
-      <workItem from="1641292984573" duration="3075000" />
+      <workItem from="1641292984573" duration="3750000" />
     </task>
     <task id="LOCAL-00001" summary="dec 26">
       <created>1640532144983</created>
@@ -193,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641281247654</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Jan 4th">
+      <created>1641297724486</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641297724486</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
