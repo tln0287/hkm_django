@@ -22,7 +22,7 @@ class SrilaPrabhupada(models.Model):
     )
     content = HTMLField(default="<p>Add content</p>")
     timestamp = models.DateTimeField(_("Timestamp"), auto_now=True)
-    image = models.ImageField(upload_to='events/')
+    image = models.ImageField(upload_to='events/',blank=True,null=True)
     event_date = models.DateField(null=True,blank=True)
 
     class Meta:

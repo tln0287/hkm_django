@@ -33,10 +33,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12">
+                        {% for i in data %}
                         <div class="blogs-details-left-area mb-50">
                             <div class="blog blogs-02 mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
                                 <div class="blog__thumb mb-35">
-                                    <img src="/static/assets/img/blog/single.jpg" alt="">
+                                    <img src="/media/{{i.image}}" alt="">
                                 </div>
                                 <div class="blog__content">
                                     <a class="tag" href="blog-details.html">children</a>
@@ -85,7 +86,12 @@
 
 
                         </div>
+                        {% endfor %}
                     </div>
+
+
+
+
                     {% include 'sirlasidebar.html' %}
                 </div>
             </div>
