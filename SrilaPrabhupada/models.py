@@ -5,25 +5,48 @@ from django.utils.translation import gettext_lazy as _
 # Create your models here.
 
 
-class Category(models.Model):
-
-    title = models.CharField(_("Title"), max_length=50)
-    class Meta:
-        verbose_name = _("Category")
-        verbose_name_plural = _("Categories")
-
-    def __str__(self):
-        return self.title
-
-class SrilaPrabhupada(models.Model):
+# Create your models here.
+class Archana(models.Model):
     id = models.AutoField(primary_key=True, auto_created=True)
-    title = models.ManyToManyField(
-        Category, verbose_name=_("Category"), related_name="post"
-    )
+    title = models.CharField(max_length=500, blank=True, null=True)
     content = HTMLField(default="<p>Add content</p>")
-    timestamp = models.DateTimeField(_("Timestamp"), auto_now=True)
-    image = models.ImageField(upload_to='events/',blank=True,null=True)
-    event_date = models.DateField(null=True,blank=True)
+    image = models.ImageField(upload_to='archana/',null=True)
 
     class Meta:
-        verbose_name_plural = "Our Archana"
+        verbose_name_plural = "Archana"
+
+class Biography(models.Model):
+    id = models.AutoField(primary_key=True, auto_created=True)
+    title = models.CharField(max_length=500, blank=True, null=True)
+    content = HTMLField(default="<p>Add content</p>")
+    image = models.ImageField(upload_to='biography/',null=True)
+
+    class Meta:
+        verbose_name_plural = "Biography"
+
+class Books(models.Model):
+    id = models.AutoField(primary_key=True, auto_created=True)
+    title = models.CharField(max_length=500, blank=True, null=True)
+    content = HTMLField(default="<p>Add content</p>")
+    image = models.ImageField(upload_to='books/',null=True)
+
+    class Meta:
+        verbose_name_plural = "Books"
+
+class Lectures(models.Model):
+    id = models.AutoField(primary_key=True, auto_created=True)
+    title = models.CharField(max_length=500, blank=True, null=True)
+    content = HTMLField(default="<p>Add content</p>")
+    image = models.ImageField(upload_to='lectures/',null=True)
+
+    class Meta:
+        verbose_name_plural = "Lectures"
+
+class Bhajans(models.Model):
+    id = models.AutoField(primary_key=True, auto_created=True)
+    title = models.CharField(max_length=500, blank=True, null=True)
+    content = HTMLField(default="<p>Add content</p>")
+    image = models.ImageField(upload_to='bhajans/',null=True)
+
+    class Meta:
+        verbose_name_plural = "Bhajans"

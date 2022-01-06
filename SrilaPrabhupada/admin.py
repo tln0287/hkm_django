@@ -1,15 +1,8 @@
 from django.contrib import admin
-from .models import SrilaPrabhupada,Category
-# Register your models here.
+from .models import *
 
-class CategoryProfileAdmin(admin.ModelAdmin):
-    list_display = ['title']
-    list_filter = ['title',]
-
-admin.site.register(Category,CategoryProfileAdmin)
-
-class SrilaPrabhupadaProfileAdmin(admin.ModelAdmin):
-    list_display = ['content']
-    list_filter = ['title',]
-
-admin.site.register(SrilaPrabhupada,SrilaPrabhupadaProfileAdmin)
+admin.site.register(Archana)
+admin.site.register(Biography)
+admin.site.register(Books)
+admin.site.register(Bhajans)
+admin.site.register(Lectures)
