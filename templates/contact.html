@@ -34,7 +34,7 @@
                             <div class="section-title text-left mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
                                 <h6><span><i class="far fa-heart"></i></span> Get In Touch</h6>
                                 <h2>Call Or Email Us</h2>
-                                <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some.</p>
+
                             </div>
                             <div class="contacts d-flex align-items-center mb-30">
                                 <div class="contacts__icon mr-25">
@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="contacts__text">
                                     <h4 class="semi-02-title">Phone Number</h4>
-                                    <h5>+02 123 456 7894</h5>
+                                    <h5>{{ phone }}</h5>
                                 </div>
                             </div>
                             <div class="contacts d-flex align-items-center mb-30">
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="contacts__text">
                                     <h4 class="semi-02-title">Email Address</h4>
-                                    <h5>info@example.com</h5>
+                                    <h5>{{ email }}</h5>
                                 </div>
                             </div>
                             <div class="contacts d-flex align-items-center mb-30">
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="contacts__text">
                                     <h4 class="semi-02-title">Our Location</h4>
-                                    <h5>59 Dark Road, USA</h5>
+                                    <h5 style="background-color: #ffcb88;">{{ address|safe }} </h5>
                                 </div>
                             </div>
                         </div>
