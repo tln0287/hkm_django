@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_15_01_2022_18_09_[Changes]" date="1642250353358" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2022_18_09_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/01/2022 18:09 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_03_01_2022_21_31_[Changes]/page-title1.jpg" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="static/assets/img/blog/7.jpg" />
+    <option name="AFTER_PATH" value="static/assets/img/blog/7.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2022_18_09_[Changes]/7.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_03_01_2022_21_31_[Changes]/page-title.jpg" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="SrilaPrabhupada.zip" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2022_18_09_[Changes]/SrilaPrabhupada.zip" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="db.sqlite3" />
+    <option name="AFTER_PATH" value="db.sqlite3" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_01_2022_18_09_[Changes]/db.sqlite3" />
+  </binary>
+</changelist>
