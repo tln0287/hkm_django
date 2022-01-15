@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="nick jan 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seva/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seva/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seva/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seva/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641442210203</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="nick jan 6">
+      <created>1641444761540</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1641444761540</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
