@@ -118,6 +118,8 @@ TINYMCE_DEFAULT_CONFIG = {
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
+
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',

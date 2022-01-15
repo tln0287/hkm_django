@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Jan 3rd">
-      <change afterPath="$PROJECT_DIR$/Temple/migrations/0002_facilities_guesthouse_templehistory_delete_temples.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/migrations/0002_rename_contact_email_contact_address_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact/migrations/0003_alter_contact_address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/temple/Guest-House-iskcon6-960x600-1-770x500.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/temple/Guest-House-iskcon8-960x600-1-770x500.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/temple/aerial-view-of-the-temple.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templesidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temple/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Temple/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temple/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Temple/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temple/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Temple/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temple/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Temple/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contact/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contact/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/facilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/guesthouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guesthouse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templehistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templehistory.html" afterDir="false" />
-    </list>
+    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="Jan 15th" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Biometric" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -223,7 +203,28 @@
       <option name="project" value="LOCAL" />
       <updated>1641571242839</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Jan 15th">
+      <created>1642251191025</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1642251191025</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Jan 15th">
+      <created>1642251318596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1642251318596</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Jan 15th">
+      <created>1642251516964</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1642251516964</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +240,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -253,7 +255,8 @@
     <MESSAGE value="Jan 4th" />
     <MESSAGE value="nick jan 6" />
     <MESSAGE value="Jan 3rd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jan 3rd" />
+    <MESSAGE value="Jan 15th" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jan 15th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
