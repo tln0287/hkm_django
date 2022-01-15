@@ -5,7 +5,7 @@ urlpatterns = [
     path('annadana', annadana, name='annadana'),
     path('vastrabarana', vastrabarana, name='vastrabarana'),
     path('pushpalankara', pushpalankara, name='pushpalankara'),
-    path('bhisheka', bhisheka, name='bhisheka'),
+    path('abhisheka', abhisheka, name='abhisheka'),
     path('naivedya', naivedya, name='naivedya'),
 
 ]

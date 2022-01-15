@@ -1,4 +1,6 @@
 from django.contrib import admin
-from .models import Temples
+from .models import *
 # Register your models here.
-admin.site.register(Temples)
+admin.site.register(TempleHistory)
+admin.site.register(Facilities)
+admin.site.register(GuestHouse)

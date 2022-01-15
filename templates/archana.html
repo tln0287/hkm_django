@@ -40,51 +40,12 @@
                                     <img src="/media/{{i.image}}" alt="">
                                 </div>
                                 <div class="blog__content">
-                                    <a class="tag" href="blog-details.html">children</a>
-                                    <h3 class="blog-title mb-20"><a href="blog-details.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</a></h3>
-                                    <ul class="blog-author mb-20">
-                                            <li><a href="#"><img src="/static/assets/img/blog/author.jpg" alt="">
-                                                    <span>Gabriela Franklin</span></a></li>
-                                            <li>
-                                                <i class="far fa-calendar-alt"></i> 20 August 2021
-                                            </li>
-                                            <li>
-                                                <i class="far fa-comments"></i> Comments (1k)
-                                            </li>
-                                    </ul>
-                                    <p class="mb-35">
-                                        Duis nulla eros, tempus in maximus vel, imperdiet id massa. Suspendisse dignissim nisi nec diam facilisis, aliquam facilisis dolor efficitur. Donec elementum placerat tempor. Aliquam elementum purus at vehicula malesuada. Nam molestie nisl a porttitor euismod. Aliquam dapibus pharetra risus a luctus. Donec posuere posuere velit, vitae ultricies justo euismod vel. In tristique facilisis quam at suscipit. Vivamus ligula tortor, finibus non nibh at, facilisis faucibus quam. Vivamus ac diam sit amet felis maximus posuere. Vestibulum eleifend non orci in venenatis.
-                                    </p>
-                                    <h3 class="cases-title mb-20">Phasellus eu nisl ut purus pharetra luctus</h3>
-                                    <p class="mb-25">
-                                        Donec at dignissim ex. Morbi condimentum dictum sapien. Phasellus a libero suscipit, lacinia ipsum quis, dictum dolor. Pellentesque sit amet pretium ex. Ut non tellus tempus nibh aliquet vestibulum at et ex. Sed eget lobortis mauris. Proin in pellentesque urna, gravida feugiat purus. Vivamus auctor tellus in massa convallis aliquam. Donec vel tempus enim.
-                                    </p>
-                                    <div class="blogs-details-thumb mb-10">
-                                        <img class="img-fluid" src="/static/assets/img/blog/5.jpg" alt="">
-                                    </div>
+
+                                    <h3 class="blog-title mb-20"><a href="blog-details.html">{{i.title}}</a></h3>
+
+                                        {{i.content |safe}}
                                 </div>
                             </div>
-                            <div class="blog-details-list">
-                                <h3 class="cases-title mb-15"> Suspendisse pellentesque maximus maximus porttitor</h3>
-                                <p>
-                                    Quisque auctor eleifend ligula varius tempus. Suspendisse pellentesque, massa maximus maximus porttitor, erat velit lobortis urna, vitae porta nisi est eu dui. Suspendisse et ornare odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas gravida mauris ac nisl fermentum, vitae accumsan urna dignissim. Praesent laoreet dapibus eros nec feugiat. Fusce ornare elit laoreet consequat pellentesque.
-                                </p>
-                                <ul class="about_list mt-15 mb-20 wow fadeInUp2 animated" data-wow-delay='.2s'>
-                                    <li>Donec fermentum diam nec ligula bibendum suscipit</li>
-                                    <li>Curabitur faucibus odio eu placerat blandit felis</li>
-                                    <li>Turpis rutrum nibh vel rutrum eros lectus interdum tortor</li>
-                                    <li>Mauris vitae felis viverra iaculis erat suscipit mauris</li>
-                                </ul>
-                            </div>
-                            <div class="blogs-details-quote black-bg mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="quote-wrapper">
-                                    <h3 class="mb-20"> Donec fermentum diam nec ligula bibendum suscipit onec dui sapien tincidunt id erat eget venenatis vulputate est roin ut egestas lorem.</h3>
-                                    <p><i class="far fa-quote-left"></i> Janelle R George </p>
-                                </div>
-                            </div>
-
-
-
                         </div>
                         {% endfor %}
                     </div>
