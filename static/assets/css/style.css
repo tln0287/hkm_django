@@ -7871,6 +7871,9 @@ input.main-search-input:-ms-input-placeholder {
     background-size: 550px 550px; !important;
   }
 
-
+iframe,object,embed{
+  max-height: 100% !important;
+  max-width: 100% !important;
+}
 
 }
