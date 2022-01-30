@@ -2529,7 +2529,7 @@ label {
 
 .page-title-wrapper .page-title {
   color: white;
-  font-size: 75px;
+  font-size: 46px;
   line-height: 1;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
@@ -3875,7 +3875,7 @@ input.main-search-input:-ms-input-placeholder {
   margin-top: 8px;
 }
 .widget_address__icon i {
-  color: #091c40;
+  color: #fff;
   font-size: 37px;
 }
 .widget_address__content h4 {
@@ -7861,6 +7861,61 @@ input.main-search-input:-ms-input-placeholder {
 .error-content p{
   margin-bottom: 20px;
 }
+
+.icon-bar {
+  position: fixed;
+  top: 61%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 7px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 23px;
+  border-radius:50%;
+
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.whatsapp2 {
+  background: #20b20f;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
 
   .slide_div{

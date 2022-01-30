@@ -1,4 +1,10 @@
 {% include 'base.html' %}
+<style>
+    body.mceContentBody {
+   background: #ffcb88;
+
+}
+</style>
 
 
  {% block content %}
@@ -72,7 +78,8 @@
                                 <h2>Feel Free To Send Message.</h2>
                             </div>
                             <div class="main-contact-area">
-                                <form method="post" action="/eventex//static/assets/php/contact.php" id="contact-form">
+                                <form method="post" action="{%url 'contactquery' %}" id="contact-form">
+                                    {%csrf_token%}
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-area mb-10">
@@ -92,7 +99,7 @@
                                         <textarea name="message"  cols="30" rows="10" placeholder="Message" required></textarea>
                                     </div>
                                     <div class="input-btn">
-                                        <button class="theme_btn theme_btn_bg large_btn">Send message</button>
+                                        <button type="submit" class="theme_btn theme_btn_bg large_btn">Send message</button>
                                     </div>
                                     <div class="col-md-12 mt-3">
                                         <div class="form-messege text-success"></div>

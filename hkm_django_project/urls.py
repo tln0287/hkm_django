@@ -13,6 +13,7 @@ urlpatterns = [
     path('', include('SrilaPrabhupada.urls')),
     path('', include('Temple.urls')),
     path('', include('Gallery.urls')),
+    path('', include('activities.urls')),
     path('', include('festivals.urls')),
     path('', include('Seva.urls')),
     path('', include('contact.urls')),

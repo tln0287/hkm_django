@@ -76,50 +76,8 @@
                             <p class="mb-35">
                             {{ content|safe }}
                             </p>
-                            <ul class="nav nav-tabs mb-35" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
-                                        aria-controls="home" aria-selected="true">Mission</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
-                                        aria-controls="profile" aria-selected="false">Vision</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
-                                        aria-controls="contact" aria-selected="false">Our Goals</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                    aria-labelledby="home-tab">
-                                    <div class="inner-content mr-35">
-                                        <div class="inner-content__text">
-                                            <h3>Medicine For Child</h3>
-                                            <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some form injected humour.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <div class="inner-content d-sm-flex align-items-center">
-                                        <div class="inner-content mr-35">
-                                            <div class="inner-content__text">
-                                                <h3>Education For Child</h3>
-                                                <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some form injected humour.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <div class="inner-content d-sm-flex align-items-center">
-                                        <div class="inner-content mr-35">
-                                            <div class="inner-content__text">
-                                                <h3>Food For People</h3>
-                                                <p>There are many variations of passages of orem psum available but the majority have suffered alteration in some form injected humour.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                          
+                                
                             </div>
                         </div>
                     </div>
@@ -168,7 +126,7 @@
         <!--counter-area end-->
 
 
-        <!--team-area start-->
+<!--        team-area start-->
         <section class="team-area-02 pb-50">
             <div class="container">
                 <div class="row">
@@ -176,148 +134,65 @@
                         <div class="section-title text-center mb-75 pl-50 pr-50 wow fadeInUp2 animated"
                             data-wow-delay='.1s'>
                             <h6><span><i class="far fa-heart"></i></span> Team Member</h6>
-                            <h2>Meet With <span>Our</span> Team</h2>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                        </div>
+                            </div>
                     </div>
                 </div>
                 <div class="row">
+                    {% for i in team %}
                     <div class="col-xl-3 col-lg-6 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay='.2s'>
+
                         <div class="teams white-bg mb-30">
                             <div class="teams__thumb pos-rel mb-30">
                                 <div class="teams__thumb--img pos-rel">
-                                    <img src="/static/assets/img/team/5.jpg" alt="">
+                                    <img src="/media/{{i.photo}}" alt="">
                                 </div>
                                 <div class="teams__thumb--social">
-                                    <a href="#">
+                                    {% if i.facebook %}
+                                    <a href="{{i.facebook}}" target="_blank">
+                                        {%else%}
+                                        <a href="#">
+                                     {%endif%}
                                         <i class="fab fa-facebook-f"></i>
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#">
+<!--                                    <a href="{{i.facbook}}">-->
+<!--                                        <i class="fab fa-twitter"></i>-->
+<!--                                        <i class="fab fa-twitter"></i>-->
+<!--                                    </a>-->
+
+                                         {% if i.youtubechannel %}
+                                    <a href="{{i.youtubechannel}}" target="_blank">
+                                        {%else%}
+                                        <a href="#">
+                                            {%endif%}
                                         <i class="fab fa-youtube"></i>
                                         <i class="fab fa-youtube"></i>
                                     </a>
-                                    <a href="#">
+
+                                        {% if i.instagram %}
+                                    <a href="{{i.instagram}}" target="_blank">
+                                        {%else%}
+                                        <a href="#">
+                                            {%endif%}
                                         <i class="fab fa-linkedin-in"></i>
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="teams__content text-center">
-                                <h3 class="semi-02-title"><a href="team-details.html">Herman Cantu</a></h3>
-                                <p>Project Manager</p>
+                                <h3 class="semi-02-title"><a href="team-details.html">{{i.name}}</a></h3>
+                                <p>{{i.designation}}</p>
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay='.4s'>
-                        <div class="teams white-bg mb-30">
-                            <div class="teams__thumb pos-rel mb-30">
-                                <div class="teams__thumb--img pos-rel">
-                                    <img src="/static/assets/img/team/6.jpg" alt="">
-                                </div>
-                                <div class="teams__thumb--social">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="teams__content text-center">
-                                <h3 class="semi-02-title"><a href="team-details.html">Doreen Riviera</a></h3>
-                                <p>CEO & Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay='.6s'>
-                        <div class="teams white-bg mb-30">
-                            <div class="teams__thumb pos-rel mb-30">
-                                <div class="teams__thumb--img pos-rel">
-                                    <img src="/static/assets/img/team/7.jpg" alt="">
-                                </div>
-                                <div class="teams__thumb--social">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="teams__content text-center">
-                                <h3 class="semi-02-title"><a href="team-details.html">Marion Danielson</a></h3>
-                                <p>Medical Support</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay='.3s'>
-                        <div class="teams white-bg mb-30">
-                            <div class="teams__thumb pos-rel mb-30">
-                                <div class="teams__thumb--img pos-rel">
-                                    <img src="/static/assets/img/team/8.jpg" alt="">
-                                </div>
-                                <div class="teams__thumb--social">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="teams__content text-center">
-                                <h3 class="semi-02-title"><a href="team-details.html">Larry Johnson</a></h3>
-                                <p>Software Engineer</p>
-                            </div>
-                        </div>
-                    </div>
+                             {%endfor%}
+
+
                 </div>
             </div>
         </section>
-        <!--team-area end-->
-
-
-
-
-
-        
-
-
+<!--        team-area end-->
 
     </main>
 

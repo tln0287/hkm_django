@@ -23,7 +23,17 @@ def books(request):
     return render(request, 'books.html',context)
 
 def lectures(request):
-    return render(request, 'lectures.html')
+    data = Lectures.objects.all().values()
+    context = dict()
+    context['data'] = data
+    return render(request, 'lectures.html',context)
 
 def bhajana(request):
-    return render(request, 'bhajana.html')
+    data = Bhajans.objects.all().values()
+    context = dict()
+    context['data'] = data
+    return render(request, 'bhajana.html',context)
+
+def bbooks(request):
+
+    return render(request, 'bbooks.html')

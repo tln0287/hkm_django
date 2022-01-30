@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'Seva',
     'contact',
     'donate',
+    'activities',
     'tinymce',
 ]
 
@@ -116,8 +118,6 @@ TINYMCE_DEFAULT_CONFIG = {
     "statusbar": True,
 }
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-
-
 
 
 AUTH_PASSWORD_VALIDATORS = [

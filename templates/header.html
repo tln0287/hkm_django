@@ -28,9 +28,9 @@
 
                                     <li><a class="{% if '/archana' == request.path or '/biography' == request.path or '/books' == request.path or '/lectures' == request.path  or '/bhajana' == request.path%} active {% endif %}" href="#">Srila Prabhupada <i class="far fa-chevron-down"></i></a>
                                         <ul class="submenu">
-                                            <li ><a href="{% url 'archana' %}">Our Archana</a></li>
-                                            <li><a href="{% url 'biography' %}">Biography</a></li>
-                                            <li><a href="{% url 'books' %}">Books</a></li>
+                                            <li ><a href="{% url 'archana' %}">Our Acharya</a></li>
+                                            <li><a href="{% url 'biography' %}">Srila Prabhupada's Biography</a> </li>
+                                            <li><a href="{% url 'books' %}">Srila Prabhupada Books</a></li>
                                             <li><a href="{% url 'lectures' %}">Lectures</a></li>
                                             <li><a href="{% url 'bhajana' %}">Bhajans and Kirtans</a></li>
                                         </ul>
@@ -43,18 +43,18 @@
 
 
                                 <li><a class="{% if '/festival' == request.path %} active {% endif %}" href="{% url 'festival' %}">Festivals</a></li>
-                                <li><a  class="{% if '/gallery' == request.path %} active {% endif %}" href="{% url 'gallery' %}">Gallery</a></li>
-                                <li><a  class="{% if '/vastrabarana' == request.path or '/pushpalankara' == request.path or '/annadana' == request.path or '/bhisheka' == request.path  or '/naivedya' == request.path%} active {% endif %}"href="#">Seva's <i class="far fa-chevron-down"></i></a>
+                                <li><a  class="{% if '/gallery' == request.path %} active {% endif %}" href="{% url 'gallery' %}">Gallery <i class="far fa-chevron-down"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="{% url 'vastrabarana' %}"> Vastrabarana Seva</a></li>
-                                    <li><a href="{% url 'pushpalankara' %}"> Pushpalankara Seva</a></li>
-                                    <li><a href="{% url 'annadana' %}"> Annadana Seva</a></li>
-                                    <li><a href="{% url 'abhisheka' %}"> Abhisheka Seva</a></li>
-                                    <li><a href="{% url 'naivedya' %}"> Naivedya Seva</a></li>
-                                    </ul>
-                                </li>
+                                    <li><a href="{% url 'media' %}"> Media</a></li>
+                                    <li><a href="{% url 'weekly_darshan' %}"> Weekly darshan</a></li>
+                                    <li><a href="{% url 'festival_darshan' %}"> Festival darshan</a></li>
+                                    <li><a href="{% url 'videos' %}"> Videos</a></li>
+
+                                    </ul></li>
+                                <li><a  href="/activity">Activities </a></li>
                                 <li><a class="{% if '/contact' == request.path %} active {% endif %}" href="{% url 'contact' %}">Contact</a></li>
                                 <li><a class="{% if '/donate' == request.path %} active {% endif %}" href="{% url 'donate' %}">Donate </a></li>
+                               
 
                             </ul>
                         </nav>
@@ -93,9 +93,9 @@
             <li><a href="{% url 'about' %}">About Us</a></li>
             <li class="has-dropdown"><a href="#">Srila Prabhupada </a>
                                         <ul class="submenu">
-                                            <li><a href="{% url 'archana' %}">Our Archana</a></li>
-                                            <li><a href="{% url 'biography' %}">Biography</a></li>
-                                            <li><a href="{% url 'books' %}">Books</a></li>
+                                            <li><a href="{% url 'archana' %}">Our Acharya</a></li>
+                                             <li><a href="{% url 'biography' %}">Srila Prabhupada Biography </a></li>
+                                            <li><a href="{% url 'books' %}">Srila Prabhupada Books</a></li>
                                             <li><a href="{% url 'lectures' %}">Lectures</a></li>
                                             <li><a href="{% url 'bhajana' %}">Bhajans and Kirtans</a></li>
                                         </ul>
@@ -108,18 +108,19 @@
 
 
                                 <li><a href="{% url 'festival' %}">Festivals</a></li>
-                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                                <li class="has-dropdown"><a href="#">Seva's </a>
+                              <li class="has-dropdown"><a href="#">Gallery <i class="far fa-chevron-down"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="{% url 'vastrabarana' %}"> Vastrabarana Seva</a></li>
-                                    <li><a href="{% url 'pushpalankara' %}"> Pushpalankara Seva</a></li>
-                                    <li><a href="{% url 'annadana' %}"> Annadana Seva</a></li>
-                                    <li><a href="{% url 'abhisheka' %}"> Bhisheka Seva</a></li>
-                                    <li><a href="{% url 'naivedya' %}"> Naivedya Seva</a></li>
-                                    </ul>
+                                    <li><a href="{% url 'media' %}"> Media</a></li>
+                                    <li><a href="{% url 'weekly_darshan' %}"> Weekly darshan</a></li>
+                                    <li><a href="{% url 'festival_darshan' %}"> Festival darshan</a></li>
+                                    <li><a href="{% url 'videos' %}"> Videos</a></li>
+
+                                    </ul></li>
+                                <li><a href="{% url 'activity' %}">Activities </a>                      
                                 </li>
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
                                 <li><a href="{% url 'donate' %}">Donate </a></li>
+           <li ><a  href="https://www.youtube.com/watch?v=Kt21pBgL2aw" target="_blank"><i class="fa fa-play-circle" style="color:red" aria-hidden="true"></i> Live </a></li>
         </ul>
     </nav>
     <!-- side-mobile-menu end -->

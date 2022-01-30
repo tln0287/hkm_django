@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="nick jan 6">
-      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="35baf934-9f99-49ba-bcf7-e9af64fe73c0" name="Changes" comment="HKM" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Biometric" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/razorpay-python-testapp-master/razorpay-python-testapp-master" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -55,6 +53,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="hkm_django_project.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -92,6 +91,13 @@
       <workItem from="1641055072265" duration="1429000" />
       <workItem from="1641276360337" duration="4227000" />
       <workItem from="1641292984573" duration="3750000" />
+      <workItem from="1641809160536" duration="1563000" />
+      <workItem from="1641875117370" duration="621000" />
+      <workItem from="1641895621448" duration="1674000" />
+      <workItem from="1643027477495" duration="152000" />
+      <workItem from="1643525467689" duration="537000" />
+      <workItem from="1643526011229" duration="123000" />
+      <workItem from="1643526202823" duration="10393000" />
     </task>
     <task id="LOCAL-00001" summary="dec 26">
       <created>1640532144983</created>
@@ -205,40 +211,40 @@
       <option name="project" value="LOCAL" />
       <updated>1641571242839</updated>
     </task>
-    <task id="LOCAL-00017" summary="Jan 15th">
-      <created>1642251191025</created>
+    <task id="LOCAL-00017" summary="HKM">
+      <created>1641809588173</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1642251191025</updated>
+      <updated>1641809588173</updated>
     </task>
-    <task id="LOCAL-00018" summary="Jan 15th">
-      <created>1642251318596</created>
+    <task id="LOCAL-00018" summary="HKM">
+      <created>1641810015895</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1642251318596</updated>
+      <updated>1641810015895</updated>
     </task>
-    <task id="LOCAL-00019" summary="Jan 15th">
-      <created>1642251516964</created>
+    <task id="LOCAL-00019" summary="HKM">
+      <created>1643536900914</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1642251516964</updated>
+      <updated>1643536900915</updated>
     </task>
-    <task id="LOCAL-00020" summary="nick jan 6">
-      <created>1642253990750</created>
+    <task id="LOCAL-00020" summary="HKM">
+      <created>1643536922121</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1642253990750</updated>
+      <updated>1643536922121</updated>
     </task>
-    <task id="LOCAL-00021" summary="nick jan 6">
-      <created>1642254262567</created>
+    <task id="LOCAL-00021" summary="HKM">
+      <created>1643536966055</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1642254262567</updated>
+      <updated>1643536966055</updated>
     </task>
     <option name="localTasksCounter" value="22" />
     <servers />
@@ -256,6 +262,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -268,10 +275,10 @@
     <MESSAGE value="nick jan 2" />
     <MESSAGE value="nick jan 3" />
     <MESSAGE value="Jan 4th" />
-    <MESSAGE value="Jan 3rd" />
-    <MESSAGE value="Jan 15th" />
     <MESSAGE value="nick jan 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="nick jan 6" />
+    <MESSAGE value="Jan 3rd" />
+    <MESSAGE value="HKM" />
+    <option name="LAST_COMMIT_MESSAGE" value="HKM" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -280,6 +287,11 @@
           <url>file://$PROJECT_DIR$/../raghu/blog/models.py</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/donate/views.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

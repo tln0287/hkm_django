@@ -28,118 +28,46 @@
 
 
         <!--events-area start-->
-        <section class="events-area events-style-1 pb-100 pt-100" >
+        <section class="blog-area pt-130 pb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 mx-auto">
                         <div class="section-title text-center mb-85 pl-50 pr-50 wow fadeInUp2 animated"
-                            data-wow-delay='.1s'>
-                            <h6><span><i class="far fa-heart"></i></span> Event</h6>
-                            <h2>Our <span>Upcoming</span> Event</h2>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                             data-wow-delay='.1s'>
+                            <h6><span><i class="far fa-heart"></i></span> Festivals</h6>
+                            <h2>Our <span>Upcoming</span> Festivals</h2>
+
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-12">
-                        <div class="events-wrapper mb-30">
-                            <div class="events active pos-rel wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                <div class="events__back" style="background-image: url(/static/assets/img/events/1.jpg);">
-                                </div>
-                                <ul class="events__list__one align-items-center justify-content-between pl-50 pr-50">
-                                    <li>
-                                        <div class="events__content">
-                                            <span><i class="far fa-calendar-alt"></i> 10 August 2021</span>
-                                            <h3 class="mb-15"><a href="events-details.html">Fund Raising Event For Food</a>
-                                            </h3>
-                                            <p>There are many variations of passages available the majority have suffered alteration some injected humour.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="events__btn text-md-center text-xl-right">
-                                            <a class="theme_btn theme_btn_bg" href="events-details.html">join event
-                                                <span><i class="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                    </li>
+                <div class="row">
+                    {% for fe in fest %}
+                   <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.2s'>
+                        <div class="blog mb-30">
+                            <div class="blog__thumb">
+                                <img src="/media/{{ fe.event_image }}" alt="">
+                            </div>
+                            <div class="blog__content">
+
+                                <h3 class="blog-title mb-15"><a href="{%url 'event' fe.id %}">{{ fe.title }}</a></h3>
+                                <p class="mb-25">{{ fe.content|slice:":500" |safe }}</p>
+                                    
+                                
+                                <ul class="blog-author">
+
+
                                 </ul>
                             </div>
+                             <center><a class="theme_btn theme_btn_bg" href="{%url 'event' fe.id %}">Read more <span><i
+                                    class="fas fa-arrow-right"></i></span></a></center>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="events-wrapper mb-30">
-                            <div class="events pos-rel wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                <div class="events__back" style="background-image: url(/static/assets/img/events/2.jpg);">
-                                </div>
-                                <ul class="events__list__one align-items-center justify-content-between pl-50 pr-50">
-                                    <li>
-                                        <div class="events__content">
-                                            <span><i class="far fa-calendar-alt"></i> 10 August 2021</span>
-                                            <h3 class="mb-15"><a href="events-details.html">Fund Raising Event For Food</a>
-                                            </h3>
-                                            <p>There are many variations of passages available the majority have suffered alteration some injected humour.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="events__btn text-md-center text-xl-right">
-                                            <a class="theme_btn theme_btn_bg" href="events-details.html">join event
-                                                <span><i class="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="events-wrapper mb-30">
-                            <div class="events pos-rel wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                <div class="events__back" style="background-image: url(/static/assets/img/events/3.jpg);">
-                                </div>
-                                <ul class="events__list__one align-items-center justify-content-between pl-50 pr-50">
-                                    <li>
-                                        <div class="events__content">
-                                            <span><i class="far fa-calendar-alt"></i> 10 August 2021</span>
-                                            <h3 class="mb-15"><a href="events-details.html">Fund Raising Event For Food</a>
-                                            </h3>
-                                            <p>There are many variations of passages available the majority have suffered alteration some injected humour.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="events__btn text-md-center text-xl-right">
-                                            <a class="theme_btn theme_btn_bg" href="events-details.html">join event
-                                                <span><i class="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="events-wrapper mb-30">
-                            <div class="events active pos-rel wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                <div class="events__back" style="background-image: url(/static/assets/img/events/4.jpg);">
-                                </div>
-                                <ul class="events__list__one align-items-center justify-content-between pl-50 pr-50">
-                                    <li>
-                                        <div class="events__content">
-                                            <span><i class="far fa-calendar-alt"></i> 10 August 2021</span>
-                                            <h3 class="mb-15"><a href="events-details.html">Fund Raising Event For Food</a>
-                                            </h3>
-                                            <p>There are many variations of passages available the majority have suffered alteration some injected humour.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="events__btn text-md-center text-xl-right">
-                                            <a class="theme_btn theme_btn_bg" href="events-details.html">join event
-                                                <span><i class="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    {%endfor%}
+
                 </div>
             </div>
         </section>
+
         <!--events-area end-->
 
     </main>

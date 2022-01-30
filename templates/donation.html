@@ -34,101 +34,22 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12">
                         <div class="donation-form-left">
-                            <div class="doante-select-area donate-select-area-04 mb-30 text-center white-bg wow fadeInUp2 animated"
-                                data-wow-delay='.1s'>
-                                <div class="section-title text-left mb-45">
-                                    <h6><span><i class="far fa-heart"></i></span> Donation Now</h6>
-                                    <h2>Help The Poor People</h2>
-                                </div>
-                                <div class="select-area mb-10">
-                                    <select name="fund" id="fund">
-                                        <option value="Select Fund">Select Fund</option>
-                                        <option value="Select Fund">Poor Fund</option>
-                                        <option value="Select Fund">Child Fund</option>
-                                        <option value="Select Fund">Education Fund</option>
-                                        <option value="Select Fund">Water Fund</option>
-                                    </select>
-                                </div>
-                                <div class="donate-cart pos-rel mb-10">
-                                    <form class="donate-btn pos-rel" action="#">
-                                        <input type="text" value="$100">
-                                    </form>
-                                    <div class="plus-minus">
-                                        <div class="cart inc"><i class="far fa-chevron-left"></i></div>
-                                        <div class="cart dec"><i class="far fa-chevron-right"></i></div>
-                                    </div>
-                                </div>
-                                <div class="input-donate mb-10">
-                                    <button class="cont_btn">$50</button>
-                                    <button class="cont_btn">$100</button>
-                                    <button class="cont_btn">$300</button>
-                                    <button class="cont_btn">$500</button>
-                                    <button class="cont_btn">$1000</button>
-                                </div>
-                            </div>
+
+
                             <div class="donar-information donation-form white-bg mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
+                                {% for i in data %}
                                 <div class="section-title text-left mb-50">
-                                    <h6><span><i class="far fa-heart"></i></span> Donation Now</h6>
-                                    <h2>Personal Information</h2>
-                                </div>
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Your Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Your Phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Email Address">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Country">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Your Location/ City">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Zip Code">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="State">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-area mb-10">
-                                                <input type="text" class="form-control" placeholder="Profession">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="donar-information donation-form white-bg mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="section-title text-left mb-50">
-                                    <h6><span><i class="far fa-heart"></i></span> Donation Now</h6>
-                                    <h2>Payment Type</h2>
+                                    <h6><span><i class="far fa-heart"></i></span>{{ i.name_of_donation }}</h6>
+                                    <h2>Enter Details</h2>
                                 </div>
                                 <ul class="nav nav-tabs mb-15" id="myTab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
-                                            aria-controls="home" aria-selected="true">Online Donation</a>
+                                            aria-controls="home" aria-selected="true">Minimum Donation Amount</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
-                                            aria-controls="profile" aria-selected="false">Offline Donation</a>
+                                            aria-controls="profile" aria-selected="false">Enter Donation</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
@@ -136,34 +57,38 @@
                                         aria-labelledby="home-tab">
                                         <div class="row payment-inner">
                                             <div class="col-xl-12">
-                                                <p class="mb-30">
-                                                    There are many variations of passages of orem psum available but the majority have suffered alteration in some injected humour or randomised words which don't look even slightly believable.
-                                                </p>
+
                                             </div>
-                                            <form action="#">
+                                            <form action="{% url 'add_donation' %}" method="post">
+                                                {% csrf_token %}
                                                 <div class="row">
+
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Card Holder Name">
+                                                            <input type="hidden" name="seva_name" value="{{ i.name_of_donation }}">
+                                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Expires">
+                                                            <input type="email" name="email" class="form-control" placeholder="Email Address">
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Card Number">
+                                                            <input type="number" name="phone" min="0" class="form-control" placeholder="Phone Number" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="CVC">
+                                                            <input type="hidden" name="amount" value="{{ i.price }}">
+
+                                                            <input type="text" class="form-control" value=" ₹ {{ i.price }} " disabled>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-xl-12">
-                                                        <button class="theme_btn theme_btn_bg">Donate now</button>
+                                                        <button type="submit" class="theme_btn theme_btn_bg">Donate now</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -171,39 +96,40 @@
                                     </div>
                                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="payment-inner">
-                                            <p class="mb-30">
-                                                There are many variations of passages of orem psum available but the majority have suffered alteration in some injected humour or randomised words which don't look even slightly believable.
-                                            </p>
-                                            <form action="#">
+
+                                             <form action="{% url 'add_donation' %}" method="post">
+                                                {% csrf_token %}
                                                 <div class="row">
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Your Name">
+                                                            <input type="hidden" name="seva_name" value="{{ i.name_of_donation }}">
+                                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Your Phone">
+                                                            <input type="number" name="phone" min="0" class="form-control" placeholder="Your Phone" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Email Address">
+                                                            <input type="email" name="email" class="form-control" placeholder="Email Address">
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">
                                                         <div class="input-area mb-30">
-                                                            <input type="text" class="form-control" placeholder="Country">
+                                                            <input type="number" name="amount" min="{{ i.price }}" class="form-control" placeholder="Enter Donation Amount" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-12">
-                                                        <button class="theme_btn theme_btn_bg">Donate now</button>
+                                                        <button type="submit" class="theme_btn theme_btn_bg">Donate now</button>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -211,102 +137,22 @@
                         <div class="details-right-area">
                             <div class="widget mb-30">
                                 <div class="widget-post">
-                                    <h3 class="cases-title mb-30">Popular Cases</h3>
+                                    <h3 class="cases-title mb-30">Other Seva's</h3>
+                                    {% for j in data2 %}
+
                                     <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/cases/s-1.jpg" alt="">
-                                        </div>
+
                                         <div class="post__content">
-                                            <h5><a href="blog-details.html">Vero eos et accus et iusto odio dign</a></h5>
-                                            <a class="view_btn" href="blog-details.html">view Details</a>
+                                            <h5><a href="/donate">{{ j.name_of_donation }}</a></h5>
+                                            <a class="view_btn" href="/donate">view Details</a>
                                         </div>
                                     </div>
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/cases/s-2.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h5><a href="blog-details.html">Vero eos et accus et iusto odio dign</a></h5>
-                                            <a class="view_btn" href="blog-details.html">view Details</a>
-                                        </div>
-                                    </div>
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/cases/s-3.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h5><a href="blog-details.html">Vero eos et accus et iusto odio dign</a></h5>
-                                            <a class="view_btn" href="blog-details.html">view Details</a>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
+
                                 </div>
                             </div>
-                            <div class="widget mb-30">
-                                <div class="events_wrapper wow fadeInUp2 animated" data-wow-delay='.4s'>
-                                    <div class="events-02 events-03 pos-rel mb-30" style="background-image: url(/static/assets/img/cases/4.jpg);">
-                                        <div class="cases">
-                                            <div class="cases__box pos-rel">
-                                                <ul class="cases__tag white-bg">
-                                                    <li>
-                                                        <div class="cases--author d-flex align-items-center">
-                                                            <img src="/static/assets/img/cases/cs-1.jpg" alt="">
-                                                            <h4 class="semi-02-title ml-15">Esther Simmons</h4>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a class="theme_btn theme_btn2 theme_btn_bg_02 d-btn" href="#">Donate</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="cases__content">
-                                                <div class="cases-progress mb-25">
-                                                    <p class="funding">Raised <span>$9560</span></p>
-                                                    <div class="progress">
-                                                        <div class="progress-bar wow fadeInLeft animated" data-wow-delay="0.3s" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><h5>55%</h5></div>
-                                                    </div>
-                                                </div>
-                                                <h3><a href="#">Help The Children Proverty And Safe World Environment</a></h3>
-                                                <p>There are many variations of passages the available but the majority suffered.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget mb-30">
-                                <div class="widget-post recent-post">
-                                    <h3 class="cases-title mb-30">Recent Donation</h3>
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/cases/s-1.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h5>Hedy J Craig</h5>
-                                            <span>$400.00</span>
-                                            <p><i class="far fa-calendar-alt"></i> 20 July 2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/cases/s-2.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h5>Marianne Crumpton</h5>
-                                            <span>$400.00</span>
-                                            <p><i class="far fa-calendar-alt"></i>20 July 2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/cases/s-3.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h5>Rebecca King</h5>
-                                            <span>$400.00</span>
-                                            <p><i class="far fa-calendar-alt"></i>20 July 2021</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
                 </div>

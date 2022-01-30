@@ -1,22 +1,7 @@
-<style>
-    .socials {
-    position: fixed;
-    top: 44%;
-    left: 0;
-    z-index: 99999;
-    width: 35px;
-}
-</style>
-<div class="socials animatedParent">
-<a href="https://www.facebook.com/HareKrishnaMovementHYD" target="_blank" title="Facebook"><img src="https://hkmhyderabad.org/assets/image/face.png" class="animated fadeInLeftShort delay-500 go" alt="Facebook"></a>
-<a href="https://twitter.com/HKGoldenTemple" target="_blank" title="Twitter"><img src="https://hkmhyderabad.org/assets/image/twit.png" class="animated fadeInLeftShort delay-750 go" alt="Twitter"></a>
 
-<a href="https://www.youtube.com/channel/UCdweLHG1L_AsByMeGnFacSg/videos" target="_blank" title="YouTube"><img src="https://hkmhyderabad.org/assets/image/yout.png" class="animated fadeInLeftShort delay-1250 go" alt="Youtube"></a>
-<a href="https://www.tripadvisor.in/Attraction_Review-g297586-d17639618-Reviews-Hare_Krishna_Golden_Temple-Hyderabad_Hyderabad_District_Telangana.html" target="_blank" title="Trip Advisor" class="animated fadeInLeftShort delay-1500 go">
-<img src="https://hkmhyderabad.org/assets/image/tripadv.png">
-</a>
-</div>
-<footer class="footer-area black-bg pos-rel pt-80 pb-50">
+
+
+    <footer class="footer-area black-bg pos-rel pt-80 pb-50">
         <div class="container">
             <div class="row mb-20">
                 <div class="col-xl-3 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.1s'>
@@ -33,43 +18,43 @@ Upcoming Events
 
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.3s'>
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.3s'>
                     <div class="footer__widget fot_abot mb-30 pl-40">
                         <h5 class="semi-02-title mb-25">Quick Link</h5>
                         <ul class="fot-list">
                             <li><a href="/about"><i class="far fa-angle-double-right"></i> About Us</a></li>
                             <li><a href="/festival"><i class="far fa-angle-double-right"></i> Festivals</a></li>
-                            <li><a href="#"><i class="far fa-angle-double-right"></i> Seva's</a></li>
+                            <li><a href="/activity"><i class="far fa-angle-double-right"></i> Activities</a></li>
                             <li><a href="/donate"><i class="far fa-angle-double-right"></i> Donate</a></li>
                             <li><a href="/contact"><i class="far fa-angle-double-right"></i> Contact</a></li>
                             <li><a href="/gallery"><i class="far fa-angle-double-right"></i> Our Photo Gallery</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.5s'>
-                    <div class="footer__widget mb-25">
-                        <h5 class="semi-02-title mb-25">Upcoming Events</h5>
-                        <ul class="widget_events_list">
-                            {% for fe in fest|slice:"4" %}
-                            <li>
-                                <div class="widget_events d-flex align-items-center mb-20">
-                                    <div class="widget_events__date mr-20">
-                                        <h4 class="semi-02-title">{{ fe.event_date }}
+<!--                <div class="col-xl-3 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.5s'>-->
+<!--                    <div class="footer__widget mb-25">-->
+<!--                        <h5 class="semi-02-title mb-25">Upcoming Events</h5>-->
+<!--                        <ul class="widget_events_list">-->
+<!--                            {% for fe in fest|slice:"4" %}-->
+<!--                            <li>-->
+<!--                                <div class="widget_events d-flex align-items-center mb-20">-->
+<!--                                    <div class="widget_events__date mr-20">-->
+<!--                                        <h4 class="semi-02-title">{{ fe.event_date }}-->
 
-                                        </h4>
-                                    </div>
-                                    <div class="widget_events__content">
-                                        <span> {{ fe.title }}</span>
-<!--                                        <h4 class="semi-02-title"><a href="events-list.html">Food For Poor Children</a></h4>-->
-                                    </div>
-                                </div>
-                            </li>
-                            {%endfor%}
+<!--                                        </h4>-->
+<!--                                    </div>-->
+<!--                                    <div class="widget_events__content">-->
+<!--                                        <span> {{ fe.title }}</span>-->
+<!--&lt;!&ndash;                                        <h4 class="semi-02-title"><a href="events-list.html">Food For Poor Children</a></h4>&ndash;&gt;-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            {%endfor%}-->
 
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.7s'>
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="col-xl-4 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.7s'>
                     <div class="footer__widget fot_abot mb-30 pl-60">
                         <h5 class="semi-02-title mb-25">Get In Touch</h5>
                         <ul class="widget_address_list">
@@ -130,11 +115,12 @@ Andhra Pradesh. INDIA</span>
                     </div>
                     <div class="col-md-4">
                         <div class="footer-social">
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-twitter"></i></a>
-                           <a href="#"><i class="fab fa-youtube"></i></a>
-                           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                           <a href="#"><i class="fab fa-whatsapp"></i></a>
+                           <a href="https://www.facebook.com/hkmvijayawada" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                           <a href="https://www.youtube.com/c/HKMVijayawada" target="_blank"><i class="fab fa-youtube"></i></a>
+                           <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                           <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                           <a href="https://api.whatsapp.com/send?phone=919342525862" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -142,3 +128,12 @@ Andhra Pradesh. INDIA</span>
 
         </div>
     </footer>
+       <div class="icon-bar">
+  <a href="https://www.facebook.com/hkmvijayawada"  target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=919342525862"  target="_blank" class="whatsapp2"><i class="fa fa-whatsapp"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/c/HKMVijayawada" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+  <a href="tel:9342525862" class="linkedin"><i class="fa fa-phone" aria-hidden="true"></i></a>
+
+</div>

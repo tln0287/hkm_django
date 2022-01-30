@@ -11,3 +11,19 @@ class AboutUs(models.Model):
 
     class Meta:
         verbose_name_plural = "About Us"
+
+
+class Team(models.Model):
+    id = models.AutoField(primary_key=True, auto_created=True)
+    name = models.CharField(max_length=500, blank=True, null=True)
+    designation = models.CharField(max_length=500, blank=True, null=True)
+    photo = models.ImageField(upload_to='team/',null=True)
+    facebook = models.CharField(max_length=500, blank=True, null=True)
+    instagram = models.CharField(max_length=500, blank=True, null=True)
+    youtubechannel = models.CharField(max_length=500, blank=True, null=True)
+
+    class Meta:
+        verbose_name_plural = "Team"
+
+    def __str__(self):
+        return self.name

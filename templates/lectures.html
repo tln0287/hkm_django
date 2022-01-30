@@ -29,279 +29,36 @@
 
 
         <!--blog-area start-->
-        <section class="blog-details-area pt-130 pb-70">
+      <section class="blog-details-area pt-130 pb-70">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12">
+                        {% for i in data %}
                         <div class="blogs-details-left-area mb-50">
                             <div class="blog blogs-02 mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
                                 <div class="blog__thumb mb-35">
-                                    <img src="/static/assets/img/blog/single.jpg" alt="">
+                                    <img src="/media/{{i.image}}" alt="">
                                 </div>
                                 <div class="blog__content">
-                                    <a class="tag" href="blog-details.html">children</a>
-                                    <h3 class="blog-title mb-20"><a href="blog-details.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</a></h3>
-                                    <ul class="blog-author mb-20">
-                                            <li><a href="#"><img src="/static/assets/img/blog/author.jpg" alt="">
-                                                    <span>Gabriela Franklin</span></a></li>
-                                            <li>
-                                                <i class="far fa-calendar-alt"></i> 20 August 2021
-                                            </li>
-                                            <li>
-                                                <i class="far fa-comments"></i> Comments (1k)
-                                            </li>
-                                    </ul>
-                                    <p class="mb-35">
-                                        Duis nulla eros, tempus in maximus vel, imperdiet id massa. Suspendisse dignissim nisi nec diam facilisis, aliquam facilisis dolor efficitur. Donec elementum placerat tempor. Aliquam elementum purus at vehicula malesuada. Nam molestie nisl a porttitor euismod. Aliquam dapibus pharetra risus a luctus. Donec posuere posuere velit, vitae ultricies justo euismod vel. In tristique facilisis quam at suscipit. Vivamus ligula tortor, finibus non nibh at, facilisis faucibus quam. Vivamus ac diam sit amet felis maximus posuere. Vestibulum eleifend non orci in venenatis.
-                                    </p>
-                                    <h3 class="cases-title mb-20">Phasellus eu nisl ut purus pharetra luctus</h3>
-                                    <p class="mb-25">
-                                        Donec at dignissim ex. Morbi condimentum dictum sapien. Phasellus a libero suscipit, lacinia ipsum quis, dictum dolor. Pellentesque sit amet pretium ex. Ut non tellus tempus nibh aliquet vestibulum at et ex. Sed eget lobortis mauris. Proin in pellentesque urna, gravida feugiat purus. Vivamus auctor tellus in massa convallis aliquam. Donec vel tempus enim.
-                                    </p>
-                                    <div class="blogs-details-thumb mb-10">
-                                        <img class="img-fluid" src="/static/assets/img/blog/5.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-details-list">
-                                <h3 class="cases-title mb-15"> Suspendisse pellentesque maximus maximus porttitor</h3>
-                                <p>
-                                    Quisque auctor eleifend ligula varius tempus. Suspendisse pellentesque, massa maximus maximus porttitor, erat velit lobortis urna, vitae porta nisi est eu dui. Suspendisse et ornare odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas gravida mauris ac nisl fermentum, vitae accumsan urna dignissim. Praesent laoreet dapibus eros nec feugiat. Fusce ornare elit laoreet consequat pellentesque.
-                                </p>
-                                <ul class="about_list mt-15 mb-20 wow fadeInUp2 animated" data-wow-delay='.2s'>
-                                    <li>Donec fermentum diam nec ligula bibendum suscipit</li>
-                                    <li>Curabitur faucibus odio eu placerat blandit felis</li>
-                                    <li>Turpis rutrum nibh vel rutrum eros lectus interdum tortor</li>
-                                    <li>Mauris vitae felis viverra iaculis erat suscipit mauris</li>
-                                </ul>
-                            </div>
-                            <div class="blogs-details-quote black-bg mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="quote-wrapper">
-                                    <h3 class="mb-20"> Donec fermentum diam nec ligula bibendum suscipit onec dui sapien tincidunt id erat eget venenatis vulputate est roin ut egestas lorem.</h3>
-                                    <p><i class="far fa-quote-left"></i> Janelle R George </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6">
-                                    <div class="blog-post-tag mb-50">
-                                        <span>Tags :  </span>
-                                        <a href="#">Charity,</a>
-                                        <a href="#">Donation,</a>
-                                        <a href="#">Child</a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 text-left text-md-end">
-                                    <div class="header-social post-share-icon mb-50">
-                                        <span>Share :</span>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="author fix mb-60">
-                                <div class="author__img f-left"><img src="/static/assets/img/blog/author-2.jpg" alt=""></div>
-                                <div class="author__content fix">
-                                    <h4 class="semi-02-title">Jim B Ramirez</h4>
-                                    <p>Fusce pellentesque arcu ac ipsum luctus, ac aliquet dolor tristique. Ut varius fermentum iaculis. Pellentesque pretium elementum elit nec fermentum. Nam ut nunc eget mi dapibus elementum.</p>
-                                    <div class="header-social post-share-icon pt-10">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row row-border pb-35 mb-60">
-                                <div class="col-xl-6 col-lg-12 col-md-6">
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/blog/s-1.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h4><a href="blog-details.html">Sed maximus lacus et consequat pulvinar</a></h4>
-                                            <div class="post__content--meta">
-                                                <span><i class="far fa-user"></i> Hampton</span>
-                                                <span><i class="far fa-calendar-alt"></i> 10 Aug 2021</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-12 col-md-6">
-                                    <div class="post d-flex align-items-center mb-20">
-                                        <div class="post__thumb mr-20">
-                                            <img src="/static/assets/img/blog/s-2.jpg" alt="">
-                                        </div>
-                                        <div class="post__content">
-                                            <h4><a href="blog-details.html">Donec pretium tincidunt cursus usce placerat </a></h4>
-                                            <div class="post__content--meta">
-                                                <span><i class="far fa-user"></i> Hampton</span>
-                                                <span><i class="far fa-calendar-alt"></i> 10 Aug 2021</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lates-comment mb-55">
-                                <h3 class="cases-title mb-40">Comments (20)</h3>
-                                <ul class="post-comment">
-                                    <li>
-                                        <div class="comment-box fix mb-40">
-                                            <div class="comment-box__img mr-25 f-left">
-                                                <img src="/static/assets/img/blog/com.jpg" alt="">
-                                            </div>
-                                            <div class="comment-box__content fix">
-                                                <h5>Lawrence Moore</h5>
-                                                <span><i class="far fa-clock"></i> 20 August 2021</span>
-                                                <p>Proin eget fermentum tortor. Quisque sollicitudin pellentesque elementum ulla metus dolo mattis non eros pellentesque. In vitae mauris eu odio imperdiet aliquet egestas a risus.</p>
-                                                <a href="#" class="reply-btn">Reply <i class="far fa-long-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="children ml-150">
-                                        <div class="comment-box fix mb-40">
-                                            <div class="comment-box__img mr-25 f-left">
-                                                <img src="/static/assets/img/blog/com.jpg" alt="">
-                                            </div>
-                                            <div class="comment-box__content fix">
-                                                <h5>Darwin Fisher</h5>
-                                                <span><i class="far fa-clock"></i> 20 August 2021</span>
-                                                <p>Proin eget fermentum tortor. Quisque sollicitudin pellentesque elementum ulla metus dolo mattis non eros pellentesque. In vitae mauris eu odio imperdiet aliquet egestas a risus.</p>
-                                                <a href="#" class="reply-btn">Reply <i class="far fa-long-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="comment-box fix mb-50">
-                                            <div class="comment-box__img mr-25 f-left">
-                                                <img src="/static/assets/img/blog/com.jpg" alt="">
-                                            </div>
-                                            <div class="comment-box__content fix">
-                                                <h5>Kendrick Blair</h5>
-                                                <span><i class="far fa-clock"></i> 20 August 2021</span>
-                                                <p>Proin eget fermentum tortor. Quisque sollicitudin pellentesque elementum ulla metus dolo mattis non eros pellentesque. In vitae mauris eu odio imperdiet aliquet egestas a risus.</p>
-                                                <a href="#" class="reply-btn">Reply <i class="far fa-long-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="comment-form">
-                                <h3 class="cases-title mb-30">Leave A Comment</h3>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="input-area pos-rel mb-30">
-                                            <input type="text" class="form-control" placeholder="Full Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input-area input-mail pos-rel mb-30">
-                                            <input type="text" class="form-control" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <div class="input-area input-comment pos-rel mb-30">
-                                            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Comments"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 comment-btn">
-                                        <button class="theme_btn theme_btn_bg">Post Comments <span><i
-                                            class="fas fa-arrow-right"></i></span></button>
-                                    </div>
+
+                                    <h3 class="blog-title mb-20"><a href="blog-details.html">{{i.title}}</a></h3>
+                                    <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="/media/{{i.file |safe}}" type="audio/mpeg">
+
+</audio>
+
+
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12">
-                        <div class="standard-right-area">
-                            <div class="widget mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="widget-search">
-                                    <h3 class="cases-title mb-30">Search Here</h3>
-                                    <div class="input-area pos-rel mb-10">
-                                        <input type="text" class="form-control" placeholder="Search Here...">
-                                        <button type="submit"><i class="far fa-search"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <ul class="widget-cat">
-                                    <h3 class="cases-title mb-30">Category</h3>
-                                    <li><a href="#"> <i class="far fa-angle-double-right"></i> Donate For Food <span>(10)</span> </a></li>
-                                    <li><a href="#"> <i class="far fa-angle-double-right"></i> Education <span>(15)</span> </a></li>
-                                    <li><a href="#"> <i class="far fa-angle-double-right"></i> Health & Medical <span>(20)</span> </a></li>
-                                    <li><a href="#"> <i class="far fa-angle-double-right"></i> Donate For Child <span>(30)</span> </a></li>
-                                    <li><a href="#"> <i class="far fa-angle-double-right"></i> Blood Donate <span>(45)</span> </a></li>
-                                </ul>
-                            </div>
-                            <div class="widget grey-bg2 mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="widget-post widget-post-02">
-                                    <h3 class="cases-title mb-20">Recent News</h3>
-                                    <ul>
-                                        <li>
-                                            <div class="post d-flex align-items-center mb-20">
-                                                <div class="post__thumb mr-20">
-                                                    <img src="/static/assets/img/blog/s-1.jpg" alt="">
-                                                </div>
-                                                <div class="post__content">
-                                                    <h4><a href="blog-details.html">Except sint occaecati cupidi non provid</a></h4>
-                                                    <a class="view_btn" href="blog-details.html"><i
-                                                            class="far fa-clock"></i> 05 August 2021</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="post d-flex align-items-center mb-20">
-                                                <div class="post__thumb mr-20">
-                                                    <img src="/static/assets/img/blog/s-2.jpg" alt="">
-                                                </div>
-                                                <div class="post__content">
-                                                    <h4><a href="blog-details.html">Except sint occaecati cupidi non provid</a></h4>
-                                                    <a class="view_btn" href="blog-details.html"><i
-                                                           class="far fa-clock"></i> 05 August 2021</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="post d-flex align-items-center mb-20">
-                                                <div class="post__thumb mr-20">
-                                                    <img src="/static/assets/img/blog/s-3.jpg" alt="">
-                                                </div>
-                                                <div class="post__content">
-                                                    <h4><a href="blog-details.html">Except sint occaecati cupidi non provid</a></h4>
-                                                    <a class="view_btn" href="blog-details.html"><i
-                                                           class="far fa-clock"></i> 05 August 2021</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="widget mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="widget-cat-btn">
-                                    <h3 class="cases-title mb-30">Popular Tags</h3>
-                                    <div class="cat-list">
-                                        <a class="cat-btn" href="#">Charity</a>
-                                        <a class="cat-btn" href="#">Children</a>
-                                        <a class="cat-btn" href="#">Donate</a>
-                                        <a class="cat-btn" href="#">Online</a>
-                                        <a class="cat-btn" href="#">Latest</a>
-                                        <a class="cat-btn" href="#">People</a>
-                                        <a class="cat-btn" href="#">Poor</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget grey-bg2 mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                <div class="widget-add text-center"
-                                    style="background-image: url(/static/assets/img/blog/7.jpg);">
-                                    <h5>Donate Now</h5>
-                                    <h2>Raise Your Helping Hand Hurry Up</h2>
-                                    <a href="donation.html" class="theme_btn theme_btn_bg">donate Now <span><i
-                                                class="fas fa-arrow-right"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+                    {% include 'sirlasidebar.html' %}
                 </div>
             </div>
         </section>
