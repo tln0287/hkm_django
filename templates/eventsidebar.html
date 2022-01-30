@@ -1,0 +1,22 @@
+<div class="col-xl-4 col-lg-4 col-md-12" >
+                        <div class="standard-right-area">
+
+                            <div class="widget mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
+                                <ul class="widget-cat">
+                                    <h3 class="cases-title mb-30">Festivals</h3>
+                                    {% for i in festdata %}
+                                    <li><a href="{% url 'event' i.id %}"> <i class="far fa-angle-double-right"></i> {{i.title}} </a></li>
+                                  {%endfor%}
+                                </ul>
+                            </div>
+
+                            <div class="widget grey-bg2 mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
+                                <div class="widget-add text-center"
+                                    style="background-image: url(/static/assets/img/blog/7.jpg);">
+
+                                           <br><br><br><br><br><br><br>
+                                    <a href="/donate" class="theme_btn theme_btn_bg">donate Now <span><i class="fas fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

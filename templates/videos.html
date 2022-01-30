@@ -1,0 +1,75 @@
+{% include 'base.html' %}
+
+
+{% block content %}
+
+
+    <main style="background-color: #ffcb88">
+
+        <!--page-title-area start-->
+        <section class="page-title-area" style="background-image: url(/static/assets/img/bg/page-title.jpg);">
+            <div class="container pos-rel">
+                <div class="row">
+                    <div class="col-xl-5 mx-auto">
+                        <div class="page-title-wrapper text-center pt-125">
+                            <div class="page-title-box">
+                                <h2 class="page-title">Videos</h2>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="/index">Gallery <i class="far fa-chevron-right"></i></a></li>
+                                    <li><a href="#" class="active">Videos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--page-title-area end-->
+
+
+        <!--events-area start-->
+        <section class="blog-area pt-130 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <div class="section-title text-center mb-85 pl-50 pr-50 wow fadeInUp2 animated"
+                             data-wow-delay='.1s'>
+                            <h6><span><i class="far fa-heart"></i></span>Videos</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+               <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="row">
+                           {% for j in youtube_links %}
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                <div class="pos-rel mb-30">
+                                    <iframe src="{{ j.youtube_links }}" allowfullscreen width="560" height="315" >  </iframe>
+                                </div>
+
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                        </div>
+                    </div>
+
+                </div>
+               
+                    
+
+             
+        </section>
+
+        <!--events-area end-->
+
+    </main>
+
+
+
+    {% include 'includebase.html' %}
+
+{% endblock content %}

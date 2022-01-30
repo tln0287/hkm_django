@@ -1,0 +1,86 @@
+{% include 'base.html' %}
+
+
+ {% block content %}
+
+
+    <main>
+
+        <!--page-title-area start-->
+        <section class="page-title-area" style="background-image: url(/static/assets/img/bg/page-title.jpg);">
+            <div class="container pos-rel">
+                <div class="row">
+                    <div class="col-xl-5 mx-auto">
+                        <div class="page-title-wrapper text-center pt-125">
+                            <div class="page-title-box">
+                                <h2 class="page-title">Books</h2>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="{% url 'index' %}">Home <i class="far fa-chevron-right"></i></a></li>
+                                    <li><a href="#" class="active">Books Details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--page-title-area end-->
+
+
+
+        <!--blog-area start-->
+               <section class="blog-details-area pt-130 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12">
+
+                        <div class="blogs-details-left-area mb-50">
+                            <div class="blog blogs-02 mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
+                                <div class="blog__thumb mb-35">
+                                    <img src="/media/bbooks.jpg" alt="">
+                                </div>
+                                <div class="blog__content">
+
+                                    <h3 class="blog-title mb-20"><a href="blog-details.html">{{i.title}}</a></h3>
+                                    Srila Prabhupada has done a great service to the English-speaking world, by making the spiritual treasure of India available in English. He presented the original Sanskrit and Bengali verses of the scriptures with their English transliteration, synonyms, translation and elaborate purports, which bears testimony to his profound knowledge of the subject.
+
+Dr. R. E. Asher (Professor of Linguistics, University of Edinburgh) said: “It is axiomatic that no book can be expected entirely to satisfy all its potential readers. Here is one, however, which can be said to come remarkably close to that ideal…. we have here the ideal of what an edition of a Sanskrit text for a Western audience should be.”
+
+Scholars all over the world appreciated his books, his erudite scholarship and the deep understanding of the timeless wisdom of Indian scriptures. Dr. Lawrence Shinn, Professor of Religion in Oberlin College observed: “the best feature of the Hare Krishna Movement is that it is providing scholars with excellent translations of the rarest books on Krishna-bhakti.”
+
+These books, which are considered to be the philosophical and practical foundation for the Krishna Consciousness Movement, equally attracted the attention of philosophers, the students of religion, the historians, the linguists, the sociologists and the political scientists. They considered it as the greatest contribution to the troubled human society of today’s world. “Prabhupada’s translation is an ideal blend of literal accuracy and religious insight,” said Dr. Thomas J. Hopkins, Professor of Religion, Franklin and Marshall College, Pennsylvania.
+
+Dr. Rory O’Day (Department of Human Relations, University of Waterloo, Ontario, Canada) recommended these books to be “a source of rich insights for every serious student of consciousness.” Dr. Jerry M. Chance (Chairman, Department of Philosophy and Religion, Florida A&M University) appreciated these books very much and assured that these books “will become classics for the English reader of Indian religious literature.”
+
+Dr. H B Kulkarni, Professor of English and Philosophy in the Utah State University read these books “with great care, attention and profound interest” and concluded that these books are of “incalculable value to anyone who is curious about India’s spiritual and cultural heritage.” He said: “The author of these books displays on every page an astounding scholarship in the subjects treated, and also an understanding and ease of exposition of abstruse ideas, which are rarest gifts.”
+
+Srila Prabhupada often noted that although modern colleges and universities had various departments of knowledge, there was no department that taught scientific knowledge of the self and God. By presenting the original Vedic science of God realization through his books, Srila Prabhupada filled the gap and met this vital educational need.
+
+Through his books, Srila Prabhupada provided guidelines for the practical implementation of the sublime Vedic teachings and successfully implanted genuine Vedic culture in the West. By reading these books, people could appreciate the relevance of these principles to our time. “These books are not only beautiful, but also relevant to our times,” said Dr. C. L. Spreadbury, Professor of Sociology, Stephen F. Austin State University.
+
+Highly respected in academic circles for their authority, depth and clarity, Srila Prabhupada’s books are used as standard text books in college courses and seminars in diverse subjects, including philosophy, religion, world literature, history, and the social sciences. Dr. Frederick B. Underwood, Professor of Religion in Columbia University examined these books and remarked that they are of “excellent quality and of great value for use in college classes on Indian religions.” Dr. Samuel D. Atkins (Professor of Sanskrit, Princeton University) said: “It is a most valuable work for the scholar as well as the layman and is of great utility as a reference book as well as a textbook. I promptly recommend this edition to my students.”
+
+                                    We request visitors to read these books and be benefited. Refer to the <a  style="color:red;" href="https://www.iskconbangalore.org/catalog-of-srila-prabhupadas-books/" target="_blank">Catalog of Srila Prabhupada’s Books.</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    {% include 'sirlasidebar.html' %}
+                </div>
+            </div>
+        </section>
+        <!--blog-area end-->
+    </main>
+
+
+
+
+    {% include 'includebase.html' %}
+
+{% endblock content %}

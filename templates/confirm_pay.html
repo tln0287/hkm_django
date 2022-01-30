@@ -1,0 +1,145 @@
+{% include 'base.html' %}
+
+
+ {% block content %}
+    <!-- slide-bar end -->
+
+
+
+    <main>
+
+        <!--page-title-area start-->
+        <section class="page-title-area" style="background-image: url(/static/assets/img/bg/page-title.jpg);">
+            <div class="container pos-rel">
+                <div class="row">
+                    <div class="col-xl-5 mx-auto">
+                        <div class="page-title-wrapper text-center pt-125">
+                            <div class="page-title-box">
+                                <h2 class="page-title">Confirm Payment</h2>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="index.html">Home <i class="far fa-chevron-right"></i></a></li>
+                                    <li><a href="#" class="active">Donation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--page-title-area end-->
+
+        <!--donation-form-area start-->
+        <section class="donation-form-area-02 grey-bg2 pt-125 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12">
+                        <div class="donation-form-left">
+
+
+                            <div class="donar-information donation-form white-bg mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
+
+                                <div class="section-title text-left mb-50">
+                                    <h6><span><i class="far fa-heart"></i></span>{{ seva_name }}</h6>
+                                    <h2>Confirm Details</h2>
+                                </div>
+
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="row payment-inner">
+                                            <div class="col-xl-12">
+
+                                            </div>
+                                            <form action="{% url 'charged' %}" method="post">
+                                                {% csrf_token %}
+                                                <div class="row">
+
+                                                    <div class="col-xl-6">
+                                                        <div class="input-area mb-30">
+                                                            <input type="hidden" name="id" value="{{ order_id }}">
+                                                            <input type="text" name="name" value="{{ name }}" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="input-area mb-30">
+                                                            <input type="email" name="email" value="{{ email }}" class="form-control" placeholder="Email Address" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="input-area mb-30">
+                                                            <input type="number" name="phone" value="{{ phone }}" min="0" class="form-control" placeholder="Phone Number" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="input-area mb-30">
+                                                            <input type="hidden" name="amount_paid" value="{{ amount_paid }}">
+                                                            <input type="text" class="form-control" value=" ₹ {{ amount_paid }} " disabled>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xl-12">
+
+
+
+                                                    </div>
+                                                </div>
+
+                                                <script
+            src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="rzp_test_Q4uje180fau9as"
+            data-amount="{{ amount_paid }}"
+            data-name="HKM"
+            data-description="Donation"
+            data-image="vk.jpg"
+            data-netbanking="true"
+            data-description="Tron Legacy"
+            data-prefill.name="{{ name }}"
+            data-prefill.email="{{ email }}"
+            data-prefill.contact="{{ phone }}"
+            data-notes.shopping_order_id="{{ order_id }}">
+        </script>
+        <input type="hidden" name="shopping_order_id" value="{{ order_id }}">
+
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="details-right-area">
+                            <div class="widget mb-30">
+                                <div class="widget-post">
+                                    <h3 class="cases-title mb-30">Other Seva's</h3>
+                                    {% for j in data2 %}
+
+                                    <div class="post d-flex align-items-center mb-20">
+
+                                        <div class="post__content">
+                                            <h5><a href="/donate">{{ j.name_of_donation }}</a></h5>
+                                            <a class="view_btn" href="/donate">view Details</a>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--donation-form-area end-->
+
+
+
+
+    {% include 'includebase.html' %}
+
+{% endblock content %}

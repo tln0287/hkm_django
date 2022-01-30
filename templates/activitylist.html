@@ -1,0 +1,81 @@
+{% include 'base.html' %}
+
+
+ {% block content %}
+
+
+    <main style="background-color: #ffcb88">
+
+        <!--page-title-area start-->
+        <section class="page-title-area" style="background-image: url(/static/assets/img/bg/page-title.jpg);">
+            <div class="container pos-rel">
+                <div class="row">
+                    <div class="col-xl-5 mx-auto">
+                        <div class="page-title-wrapper text-center pt-125">
+                            <div class="page-title-box">
+                                <h2 class="page-title">Activities List</h2>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="/index">Home <i class="far fa-chevron-right"></i></a></li>
+                                    <li><a href="#" class="active">Activities List</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--page-title-area end-->
+
+
+        <!--events-area start-->
+        <section class="blog-area pt-130 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mx-auto">
+                        <div class="section-title text-center mb-85 pl-50 pr-50 wow fadeInUp2 animated"
+                             data-wow-delay='.1s'>
+                            <h6><span><i class="far fa-heart"></i></span> Activities</h6>
+                            <h2>Our <span>Upcoming</span> Activities</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for fe in fest %}
+                   <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp2 animated" data-wow-delay='.2s'>
+                        <div class="blog mb-30">
+                            <div class="blog__thumb">
+                                <img src="/media/{{ fe.active_main_image }}" alt="">
+                            </div>
+
+                            <div class="blog__content">
+<!--                                <a class="tag" href="blog-details.html">funding</a>-->
+                                <h3 class="blog-title mb-15"><a href="{%url 'activitydetail' fe.id %}">{{ fe.title }}</a></h3>
+                                <p class="mb-25">{{ fe.content |slice:":300" | safe }}</p>
+                                <ul class="blog-author">
+
+<!--                                    <li>-->
+<!--                                        <i class="far fa-calendar-alt"></i> 25 August 2021-->
+<!--                                    </li>-->
+                                </ul>
+                            </div>
+                            <center><a class="theme_btn theme_btn_bg" href="{%url 'activitydetail' fe.id %}">Read more <span><i
+                                    class="fas fa-arrow-right"></i></span></a></center>
+                        </div>
+                    </div>
+
+                    {%endfor%}
+
+                </div>
+            </div>
+        </section>
+
+        <!--events-area end-->
+
+    </main>
+
+
+
+    {% include 'includebase.html' %}
+
+{% endblock content %}

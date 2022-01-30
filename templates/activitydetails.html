@@ -1,0 +1,209 @@
+{% include 'base.html' %}
+ {% block content %}
+    <main>
+        <!--page-title-area start-->
+        <section class="page-title-area" style="background-image: url(/static/assets/img/bg/page-title.jpg);">
+            <div class="container pos-rel">
+                <div class="row">
+                    <div class="col-xl-5 mx-auto">
+                        <div class="page-title-wrapper text-center pt-125">
+                               {% for i in fest %}
+                            <div class="page-title-box">
+                                <h2 class="page-title">{{i.title}}</h2>
+                                <ul class="breadcrumb-list">
+                                    <li><a href="{% url 'index' %}">Home <i class="far fa-chevron-right"></i></a></li>
+                                    <li><a href="#" class="active">{{i.title}} Details</a></li>
+                                </ul>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--page-title-area end-->
+
+
+
+        <!--blog-area start-->
+        <section class="blog-details-area pt-130 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12">
+                        {% for i in fest %}
+                        <div class="blogs-details-left-area mb-50">
+                            <div class="blog blogs-02 mb-40 wow fadeInUp2 animated" data-wow-delay='.1s'>
+                                <div class="blog__thumb mb-35">
+                                    <img src="/media/{{i.active_main_image}}" alt="">
+                                </div>
+                                <div class="row">
+                                    {%if i.active_image1 %}
+                                  <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image1}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image1 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                                {%endif%}
+                                    {%if i.active_image2 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image2}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image2 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                     {%endif%}
+                                    {%if i.active_image3 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image3}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image3 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                     {%endif%}
+                                    {%if i.active_image4 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image4}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image4 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                     {%endif%}
+                                    {%if i.active_image5 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image5}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image5 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                     {%endif%}
+                                    {%if i.active_image6 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image6}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image6 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                     {%endif%}
+                                     {%if i.active_image7 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image7}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image7 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                     {%endif%}
+                                     {%if i.active_image8 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image8}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image8 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                    {%endif%}
+                                      {%if i.active_image9 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image9}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image9 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                      {%endif%}
+                                    {%if i.active_image10 %}
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="gallery pos-rel text-center wow fadeInUp2 animated" data-wow-delay='.3s'>
+                                    <div class="gallery__thumb pos-rel mb-30">
+                                        <img src="/media/{{i.active_image10}}" alt="">
+                                    </div>
+                                    <div class="gallery__content">
+                                        <a class="popup-image" href="/media/{{i.active_image10 }}"><i
+                                                class="far fa-plus"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                                    {%endif%}
+                                    </div>
+                                <div class="blog__content">
+
+
+                                    <h3 class="blog-title mb-20">{{i.title}}</h3>
+                                    <ul class="blog-author mb-20">
+
+
+                                    </ul>
+
+                                        {{ i.content |safe }}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% include 'eventsidebar.html' %}
+                </div>
+            </div>
+        </section>
+        <!--blog-area end-->
+    </main>
+
+
+
+
+    {% include 'includebase.html' %}
+
+{% endblock content %}
